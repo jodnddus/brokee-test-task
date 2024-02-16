@@ -24,9 +24,18 @@ function App() {
 
     return (
         <div className="App">
-            <h1>BROKEE</h1>
+            <div className="feature-describe">
+                <h1>For FAST & BETTER hiring,</h1>
+                <h1>using AI Assessments summary <span className="brokee-color">in BROKEE</span></h1>
 
-            <h2>Available Tests</h2>
+                <p className="brokee-dedscription">
+                    <span className="brokee-color">BROKEE</span> now uses AI for evaluating candidate performance. <br />
+                    Traditional methods may be complex for non-technical team members, so AI generates concise summaries of candidate actions during tests.
+                    These summaries highlight tools used and serve as performance reports for the team, aiding in identifying skilled problem solvers for IT infrastructure issues.
+                </p>
+            </div>
+
+            <h2>Available Assessments 🎯</h2>
             <div className="available-tests-section">
                 {tests.map(item => <TestCard {...item} />)}
             </div>

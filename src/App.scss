@@ -1,13 +1,32 @@
 .App {
   h1 {
     font-size: 50px;
-    margin: 0 0 40px 0;
-    color: rgb(0, 156, 120);
+    margin: 0 0 0 0;
   }
 
   h2 {
     font-size: 35px;
     margin: 0 0 20px 0;
+  }
+
+  .feature-describe {
+    margin-bottom: 100px;
+
+    h2 {
+      color: rgb(17, 25, 39);
+    }
+
+    .brokee-color {
+      color: rgb(0, 156, 120);
+      text-decoration: underline;
+      font-weight: 700;
+    }
+
+    .brokee-dedscription {
+      font-size: 23px;
+      line-height: 1.5;
+      margin: 40px 0 0 0;
+    }
   }
 
   .available-tests-section {
