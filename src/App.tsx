@@ -37,7 +37,7 @@ function App() {
 
             <h2>Available Assessments 🎯</h2>
             <div className="available-tests-section">
-                {tests.map(item => <TestCard {...item} />)}
+                {tests.map((item, index) => <TestCard {...item} key={index} />)}
             </div>
         </div>
     );

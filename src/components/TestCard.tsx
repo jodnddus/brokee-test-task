@@ -18,7 +18,7 @@ function TestCard({ category, name, featured_image: testThumbnail, description_s
             </div>
             <div className="test-info-container">
                 <div className="test-name-box">
-                    {splitName(name).map((item, index) => <span className={`test-name ${index == 0 ? "category" : "name"}`}>{item}</span>)}
+                    {splitName(name).map((item, index) => <span className={`test-name ${index === 0 ? "category" : "name"}`} key={index}>{item}</span>)}
                 </div>
 
                 <p className="test-description">{description_short}</p>
