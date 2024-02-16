@@ -14,7 +14,7 @@ function TestCard({ category, name, featured_image: testThumbnail, description_s
     return (
         <div className="test-card">
             <div className="test-thumbnail-container">
-                <img className="test-thumbnail" src={testThumbnail} alt={`${category} image`} />
+                <img className="test-thumbnail" src={testThumbnail} alt={`${category} thumbnail`} />
             </div>
             <div className="test-info-container">
                 <div className="test-name-box">
