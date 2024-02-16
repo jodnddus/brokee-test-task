@@ -1,4 +1,15 @@
 .App {
+  h1 {
+    font-size: 50px;
+    margin: 0 0 40px 0;
+    color: rgb(0, 156, 120);
+  }
+
+  h2 {
+    font-size: 35px;
+    margin: 0 0 20px 0;
+  }
+
   .available-tests-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

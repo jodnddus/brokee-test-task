@@ -24,7 +24,7 @@ function App() {
 
     return (
         <div className="App">
-            <h1>Hello, Brokee!</h1>
+            <h1>BROKEE</h1>
 
             <h2>Available Tests</h2>
             <div className="available-tests-section">
