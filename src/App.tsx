@@ -25,8 +25,8 @@ function App() {
     return (
         <div className="App">
             <div className="feature-describe">
-                <h1>For FAST & BETTER hiring,</h1>
-                <h1>using AI Assessments summary <span className="brokee-color">in BROKEE</span></h1>
+                <h1>Use AI Assessments summary,</h1>
+                <h1>For FAST & BETTER hiring <span className="brokee-color">in BROKEE</span></h1>
 
                 <p className="brokee-dedscription">
                     <span className="brokee-color">BROKEE</span> now uses AI for evaluating candidate performance. <br />
