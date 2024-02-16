@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import challengesQuery from "./query/challengesQuery";
+import TestCard from "./components/TestCard";
 import { TestType } from "./type/test";
 import './App.scss';
 
@@ -27,7 +28,7 @@ function App() {
 
             <h2>Available Tests</h2>
             <div className="available-tests-section">
-                {tests.map(item => item.name)}
+                {tests.map(item => <TestCard {...item} />)}
             </div>
         </div>
     );
