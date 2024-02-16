@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import challengesQuery from "./query/challengesQuery";
 import { TestType } from "./type/test";
-import './App.css';
+import './App.scss';
 
 function App() {
     const [tests, setTests] = useState<TestType[] | null>(null);
