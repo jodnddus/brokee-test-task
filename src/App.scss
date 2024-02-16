@@ -2,6 +2,102 @@
   .available-tests-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 40px;
+    grid-gap: 100px;
+
+    .test-card {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+
+      &:hover {
+        .test-thumbnail-container {
+          .test-thumbnail {
+            transform: scale(1.1);
+          }
+        }
+      }
+
+      .test-thumbnail-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+
+        .test-thumbnail {
+          transition: all 0.2s ease;
+          height: 70%;
+
+          &[src*="aws-vpc-icon"] {
+            height: 60%;
+          }
+        }
+      }
+
+      .test-info-container {
+        display: flex;
+        flex-direction: column;
+
+        .test-name-box {
+          display: flex;
+          flex-direction: column;
+          min-height: 60px;
+
+          .test-name {
+            font-size: 25px;
+            text-align: center;
+
+            &.category {
+              font-weight: 700;
+            }
+
+            &.name {
+              font-weight: 400;
+            }
+          }
+        }
+
+        .test-description {
+          font-weight: 300;
+          margin: 15px 0 0 0;
+          min-height: 58px;
+        }
+
+        .test-infomation-box {
+          margin: 10px 0 0 0;
+          display: flex;
+          flex-direction: column;
+          font-size: 14px;
+
+          .test-category {
+
+          }
+
+          .test-difficulty-name {
+            font-weight: 600;
+          }
+          .test-difficulty {
+            font-weight: 400;
+            padding: 1px 0 1px 4px;
+            color: white;
+
+            &.HARD {
+              background-color: rgb(240, 68, 56);
+            }
+
+            &.MEDIUM {
+              background-color: rgb(247, 144, 9);
+            }
+
+            &.EASY {
+              background-color: rgb(16, 185, 129);
+            }
+
+          }
+        }
+      }
+    }
   }
 }
